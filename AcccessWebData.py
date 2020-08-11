@@ -8,7 +8,6 @@ position = int(input('Enter position:'))-1
 
 print('Retrieving:', url)
 for i in range(count):
-#repeat的次數 例如四次 0 1 2 3!!!
     html = urllib.request.urlopen(url).read()
     soup = BeautifulSoup(html, 'html.parser')
     tags = soup('a')
